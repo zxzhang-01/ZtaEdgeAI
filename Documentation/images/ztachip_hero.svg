@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="1000" height="400"
+     font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+
+  <rect width="1000" height="400" fill="#ffffff"/>
+
+  <!-- header: project mark and one line of what this is -->
+  <g>
+    <rect x="32" y="20" width="11" height="11" rx="3" fill="#3f4a5a"/>
+    <rect x="47" y="20" width="11" height="11" rx="3" fill="#3f4a5a"/>
+    <rect x="62" y="20" width="11" height="11" rx="3" fill="#3f4a5a"/>
+    <rect x="32" y="35" width="11" height="11" rx="3" fill="#3f4a5a"/>
+    <rect x="47" y="35" width="11" height="11" rx="3" fill="#2fd3c0"/>
+    <rect x="62" y="35" width="11" height="11" rx="3" fill="#3f4a5a"/>
+    <rect x="32" y="50" width="11" height="11" rx="3" fill="#3f4a5a"/>
+    <rect x="47" y="50" width="11" height="11" rx="3" fill="#3f4a5a"/>
+    <rect x="62" y="50" width="11" height="11" rx="3" fill="#3f4a5a"/>
+    <text x="88" y="52" font-size="31" font-weight="700" fill="#0b2545">ztachip</text>
+    <text x="968" y="38" font-size="14" fill="#55636f" text-anchor="end">Open-source AI acceleration for the edge</text>
+    <text x="968" y="58" font-size="14" fill="#55636f" text-anchor="end">Computer vision and LLM inference on a low-cost FPGA or a custom ASIC</text>
+  </g>
+
+  <!-- what goes in -->
+  <text x="32" y="112" font-size="10.5" font-weight="700" fill="#7b8794" letter-spacing="1.3">INPUT</text>
+  <g>
+    <rect x="32" y="124" width="158" height="64" rx="8" fill="#f1f5f9" stroke="#d3dce6"/>
+    <text x="48" y="150" font-size="13.5" font-weight="700" fill="#0b2545">Camera</text>
+    <text x="48" y="170" font-size="11.5" fill="#55636f">live video frames</text>
+    <rect x="32" y="200" width="158" height="64" rx="8" fill="#f1f5f9" stroke="#d3dce6"/>
+    <text x="48" y="226" font-size="13.5" font-weight="700" fill="#0b2545">Sensors · GPIO</text>
+    <text x="48" y="246" font-size="11.5" fill="#55636f">audio, buttons, I/O</text>
+  </g>
+  <path d="M196 200 H236" stroke="#9aa8b5" stroke-width="2"/>
+  <path d="M236 194 L246 200 L236 206 Z" fill="#9aa8b5"/>
+
+  <!-- the accelerator -->
+  <rect x="250" y="110" width="410" height="180" rx="16" fill="#0b2545" stroke="#123a63"/>
+  <g>
+    <rect x="429" y="132" width="14" height="14" rx="4" fill="#ffffff"/>
+    <rect x="448" y="132" width="14" height="14" rx="4" fill="#ffffff"/>
+    <rect x="467" y="132" width="14" height="14" rx="4" fill="#ffffff"/>
+    <rect x="429" y="151" width="14" height="14" rx="4" fill="#ffffff"/>
+    <rect x="448" y="151" width="14" height="14" rx="4" fill="#2fd3c0"/>
+    <rect x="467" y="151" width="14" height="14" rx="4" fill="#ffffff"/>
+    <rect x="429" y="170" width="14" height="14" rx="4" fill="#ffffff"/>
+    <rect x="448" y="170" width="14" height="14" rx="4" fill="#ffffff"/>
+    <rect x="467" y="170" width="14" height="14" rx="4" fill="#ffffff"/>
+  </g>
+  <text x="455" y="228" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">ztachip</text>
+  <text x="455" y="252" font-size="15" fill="#9fc4e6" text-anchor="middle">edge AI accelerator</text>
+  <text x="455" y="275" font-size="12.5" fill="#6f9cc8" text-anchor="middle">FPGA or ASIC</text>
+
+  <path d="M666 200 H706" stroke="#9aa8b5" stroke-width="2"/>
+  <path d="M706 194 L716 200 L706 206 Z" fill="#9aa8b5"/>
+
+  <!-- what comes out -->
+  <text x="722" y="112" font-size="10.5" font-weight="700" fill="#7b8794" letter-spacing="1.3">RUNS</text>
+  <g>
+    <rect x="722" y="124" width="246" height="52" rx="8" fill="#f1f5f9" stroke="#d3dce6"/>
+    <text x="738" y="146" font-size="13.5" font-weight="700" fill="#0b2545">Computer vision</text>
+    <text x="738" y="164" font-size="11.5" fill="#55636f">edge detection · optical flow · motion</text>
+    <rect x="722" y="182" width="246" height="52" rx="8" fill="#f1f5f9" stroke="#d3dce6"/>
+    <text x="738" y="204" font-size="13.5" font-weight="700" fill="#0b2545">Neural networks</text>
+    <text x="738" y="222" font-size="11.5" fill="#55636f">TensorFlow models, quantized</text>
+    <rect x="722" y="240" width="246" height="52" rx="8" fill="#e8f7ec" stroke="#9fd3ae"/>
+    <text x="738" y="262" font-size="13.5" font-weight="700" fill="#0b2545">Language models</text>
+    <text x="738" y="280" font-size="11.5" fill="#55636f">LLM and VLM tokens, generated locally</text>
+  </g>
+
+  <!-- the numbers that matter -->
+  <path d="M32 330 H968" stroke="#e2e8ee" stroke-width="1"/>
+  <g>
+    <text x="32" y="360" font-size="17" font-weight="700" fill="#0b2545">20&#8211;50&#215;</text>
+    <text x="32" y="380" font-size="11.5" fill="#55636f">faster than RISC-V alone</text>
+    <text x="266" y="360" font-size="17" font-weight="700" fill="#0b2545">3.5&#215; more efficient</text>
+    <text x="266" y="380" font-size="11.5" fill="#55636f">than a Raspberry Pi 5</text>
+    <text x="500" y="360" font-size="17" font-weight="700" fill="#0b2545">Easy to program</text>
+    <text x="500" y="380" font-size="11.5" fill="#55636f">MicroPython, no hardware knowledge</text>
+    <text x="750" y="360" font-size="17" font-weight="700" fill="#0b2545">Apache 2.0</text>
+    <text x="750" y="380" font-size="11.5" fill="#55636f">RTL, compiler and software stack</text>
+  </g>
+
+</svg>
